@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "576258765347",
+    "project_id": "tradermindmc",
+    "storage_bucket": "tradermindmc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576258765347:android:bd015a10ccc8eb978bb796",
+        "android_client_info": {
+          "package_name": "com.tradermindmc.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQ1NCXZIzH3P0RlAHu2tk978iXBWWZWqU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

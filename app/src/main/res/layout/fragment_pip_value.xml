@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#FFFFFF">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="#1A1A2E" android:padding="16dp" android:orientation="horizontal" android:gravity="center_vertical">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="TraderMind MC" android:textColor="#FFFFFF" android:textSize="18sp" android:textStyle="bold"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text=" · Pip Value" android:textColor="#818CF8" android:textSize="14sp"/>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="16dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="INSTRUMENTO" android:textSize="11sp" android:textColor="#000000"
+                android:textStyle="bold" android:layout_marginBottom="6dp"/>
+            <Spinner android:id="@+id/spinner_symbol" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:background="@drawable/input_bg"
+                android:padding="12dp" android:layout_marginBottom="16dp"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="24dp">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:layout_marginEnd="8dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="LOTE" android:textSize="11sp" android:textColor="#000000"
+                        android:textStyle="bold" android:layout_marginBottom="6dp"/>
+                    <EditText android:id="@+id/input_lot" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:hint="ej: 0.01"
+                        android:text="0.01" android:textColor="#000000" android:textColorHint="#999999"
+                        android:inputType="numberDecimal" android:background="@drawable/input_bg" android:padding="12dp"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="8dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="PIPS" android:textSize="11sp" android:textColor="#000000"
+                        android:textStyle="bold" android:layout_marginBottom="6dp"/>
+                    <EditText android:id="@+id/input_pips" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:hint="ej: 10"
+                        android:text="10" android:textColor="#000000" android:textColorHint="#999999"
+                        android:inputType="numberDecimal" android:background="@drawable/input_bg" android:padding="12dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:id="@+id/btn_calculate" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="@string/calculate"
+                android:backgroundTint="#4F46E5" android:textColor="#FFFFFF"
+                android:textStyle="bold" android:padding="14dp"/>
+            <LinearLayout android:id="@+id/result_card" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="vertical"
+                android:background="@drawable/result_bg" android:padding="20dp"
+                android:layout_marginTop="20dp" android:visibility="gone">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="VALOR POR PIP" android:textSize="11sp"
+                    android:textColor="#6366F1" android:textStyle="bold" android:layout_marginBottom="6dp"/>
+                <TextView android:id="@+id/text_pip_value" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textSize="28sp"
+                    android:textColor="#3730A3" android:textStyle="bold"/>
+                <TextView android:id="@+id/text_total_value" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textSize="13sp"
+                    android:textColor="#059669" android:layout_marginTop="4dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.gms.ads.AdView android:id="@+id/adView"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="center" ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
+</LinearLayout>

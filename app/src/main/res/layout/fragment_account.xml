@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#F5F5F5">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="#1A1A2E" android:padding="16dp" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="TraderMind MC · Cuenta" android:textColor="#FFFFFF"
+                android:textSize="18sp" android:textStyle="bold"/>
+            <TextView android:id="@+id/tv_user_email" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:textColor="#818CF8"
+                android:textSize="12sp" android:layout_marginTop="4dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="16dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="BALANCE ACTUAL ($)" android:textSize="11sp" android:textColor="#000000"
+                android:textStyle="bold" android:layout_marginBottom="6dp"/>
+            <EditText android:id="@+id/input_account_balance" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="ej: 1000"
+                android:textColor="#000000" android:textColorHint="#999999"
+                android:inputType="numberDecimal" android:background="@drawable/input_bg"
+                android:padding="12dp" android:layout_marginBottom="16dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="META DE GANANCIA ($)" android:textSize="11sp" android:textColor="#000000"
+                android:textStyle="bold" android:layout_marginBottom="6dp"/>
+            <EditText android:id="@+id/input_goal" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="ej: 5000"
+                android:textColor="#000000" android:textColorHint="#999999"
+                android:inputType="numberDecimal" android:background="@drawable/input_bg"
+                android:padding="12dp" android:layout_marginBottom="16dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="DRAWDOWN MÁXIMO DIARIO (%)" android:textSize="11sp" android:textColor="#000000"
+                android:textStyle="bold" android:layout_marginBottom="6dp"/>
+            <EditText android:id="@+id/input_max_drawdown" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="ej: 5"
+                android:textColor="#000000" android:textColorHint="#999999"
+                android:inputType="numberDecimal" android:background="@drawable/input_bg"
+                android:padding="12dp" android:layout_marginBottom="16dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="META MENSUAL ($)" android:textSize="11sp" android:textColor="#000000"
+                android:textStyle="bold" android:layout_marginBottom="6dp"/>
+            <EditText android:id="@+id/input_monthly_target" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="ej: 200"
+                android:textColor="#000000" android:textColorHint="#999999"
+                android:inputType="numberDecimal" android:background="@drawable/input_bg"
+                android:padding="12dp" android:layout_marginBottom="24dp"/>
+            <Button android:id="@+id/btn_save_account" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="@string/save_settings"
+                android:backgroundTint="#4F46E5" android:textColor="#FFFFFF"
+                android:textStyle="bold" android:padding="14dp"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:background="@drawable/card_bg" android:padding="16dp"
+                android:orientation="vertical" android:layout_marginTop="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/goal_projection" android:textSize="11sp"
+                    android:textColor="#9CA3AF" android:layout_marginBottom="4dp"/>
+                <TextView android:id="@+id/tv_goal_progress" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textSize="14sp"
+                    android:textColor="#4F46E5" android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:background="@drawable/card_bg" android:padding="16dp"
+                android:orientation="vertical" android:layout_marginTop="8dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/monthly_profit" android:textSize="11sp"
+                    android:textColor="#9CA3AF" android:layout_marginBottom="4dp"/>
+                <TextView android:id="@+id/tv_monthly_profit" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textSize="24sp"
+                    android:textColor="#059669" android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:background="@drawable/card_bg" android:padding="16dp"
+                android:orientation="vertical" android:layout_marginTop="8dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/drawdown_status" android:textSize="11sp"
+                    android:textColor="#9CA3AF" android:layout_marginBottom="4dp"/>
+                <TextView android:id="@+id/tv_drawdown_status" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textSize="14sp"
+                    android:textColor="#059669" android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:background="@drawable/card_bg" android:padding="16dp"
+                android:orientation="vertical" android:layout_marginTop="8dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="PROYECCIÓN" android:textSize="11sp"
+                    android:textColor="#9CA3AF" android:layout_marginBottom="4dp"/>
+                <TextView android:id="@+id/tv_projection" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textSize="13sp"
+                    android:textColor="#4F46E5"/>
+            </LinearLayout>
+                    <Button android:id="@+id/btn_logout" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="@string/logout"
+                android:backgroundTint="#DC2626" android:textColor="#FFFFFF"
+                android:textStyle="bold" android:padding="14dp" android:layout_marginTop="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#F5F5F5">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="#1A1A2E" android:padding="16dp" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="TraderMind MC · Sesiones" android:textColor="#FFFFFF"
+                android:textSize="18sp" android:textStyle="bold"/>
+            <TextView android:id="@+id/tv_utc_clock" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:textColor="#818CF8"
+                android:textSize="14sp" android:layout_marginTop="4dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="16dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:background="@drawable/result_bg" android:padding="16dp"
+                android:orientation="vertical" android:layout_marginBottom="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="MEJOR MOMENTO PARA OPERAR" android:textSize="11sp"
+                    android:textColor="#6366F1" android:textStyle="bold" android:layout_marginBottom="6dp"/>
+                <TextView android:id="@+id/tv_best_session" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textSize="18sp"
+                    android:textColor="#4F46E5" android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:background="@drawable/card_bg" android:padding="16dp"
+                android:orientation="horizontal" android:layout_marginBottom="8dp">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="🇦🇺 SÍDNEY" android:textSize="14sp" android:textColor="#000000" android:textStyle="bold"/>
+                    <TextView android:id="@+id/tv_sydney_time" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textSize="12sp" android:textColor="#6B7280"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="21:00 - 06:00 UTC" android:textSize="11sp" android:textColor="#9CA3AF"/>
+                </LinearLayout>
+                <TextView android:id="@+id/tv_sydney_status" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textSize="13sp"
+                    android:textStyle="bold" android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:background="@drawable/card_bg" android:padding="16dp"
+                android:orientation="horizontal" android:layout_marginBottom="8dp">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="🇯🇵 TOKIO" android:textSize="14sp" android:textColor="#000000" android:textStyle="bold"/>
+                    <TextView android:id="@+id/tv_tokyo_time" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textSize="12sp" android:textColor="#6B7280"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="23:00 - 08:00 UTC" android:textSize="11sp" android:textColor="#9CA3AF"/>
+                </LinearLayout>
+                <TextView android:id="@+id/tv_tokyo_status" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textSize="13sp"
+                    android:textStyle="bold" android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:background="@drawable/card_bg" android:padding="16dp"
+                android:orientation="horizontal" android:layout_marginBottom="8dp">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="🇬🇧 LONDRES" android:textSize="14sp" android:textColor="#000000" android:textStyle="bold"/>
+                    <TextView android:id="@+id/tv_london_time" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textSize="12sp" android:textColor="#6B7280"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="07:00 - 16:00 UTC" android:textSize="11sp" android:textColor="#9CA3AF"/>
+                </LinearLayout>
+                <TextView android:id="@+id/tv_london_status" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textSize="13sp"
+                    android:textStyle="bold" android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:background="@drawable/card_bg" android:padding="16dp"
+                android:orientation="horizontal">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="🇺🇸 NUEVA YORK" android:textSize="14sp" android:textColor="#000000" android:textStyle="bold"/>
+                    <TextView android:id="@+id/tv_newyork_time" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textSize="12sp" android:textColor="#6B7280"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="12:00 - 21:00 UTC" android:textSize="11sp" android:textColor="#9CA3AF"/>
+                </LinearLayout>
+                <TextView android:id="@+id/tv_newyork_status" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textSize="13sp"
+                    android:textStyle="bold" android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
