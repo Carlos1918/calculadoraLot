@@ -65,7 +65,7 @@
     <string name="utc_time">UTC Time</string>
     <string name="login">Sign In</string>
     <string name="register">Create Account</string>
-    <string name="no_account">Don't have an account? Sign up</string>
+    <string name="no_account">Don\'t have an account? Sign up</string>
     <string name="have_account">Already have an account? Sign in</string>
     <string name="logout">Sign Out</string>
     <string name="error_email_used">This email is already registered</string>
