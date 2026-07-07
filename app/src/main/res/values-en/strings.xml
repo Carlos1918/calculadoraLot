@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">TraderMind MC</string>
+    <string name="app_name">TradePro</string>
     <string name="lot_size">Lot Size</string>
     <string name="risk_reward">Risk/Reward</string>
     <string name="pip_value">Pip Value</string>

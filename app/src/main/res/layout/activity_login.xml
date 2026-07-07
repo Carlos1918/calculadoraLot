@@ -6,10 +6,10 @@
 
     <!-- Logo / Brand -->
     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:text="TraderMind MC" android:textColor="#FFFFFF"
+        android:text="TradePro" android:textColor="#FFFFFF"
         android:textSize="32sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:text="te enseñamos a pensar como trader"
+        android:text="Diario y Calculadoras Forex"
         android:textColor="#818CF8" android:textSize="14sp" android:layout_marginBottom="48dp"/>
 
     <!-- Card -->

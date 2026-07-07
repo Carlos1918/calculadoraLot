@@ -7,7 +7,7 @@
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
             android:background="#1A1A2E" android:padding="16dp" android:orientation="vertical">
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                android:text="TraderMind MC · Sesiones" android:textColor="#FFFFFF"
+                android:text="TradePro · Sesiones" android:textColor="#FFFFFF"
                 android:textSize="18sp" android:textStyle="bold"/>
             <TextView android:id="@+id/tv_utc_clock" android:layout_width="wrap_content"
                 android:layout_height="wrap_content" android:textColor="#818CF8"
