@@ -1,2 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108"><path android:fillColor="#FFFFFF" android:pathData="M54,20 L70,50 L90,54 L70,58 L54,88 L38,58 L18,54 L38,50 Z"/></vector>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <!-- Grid -->
+    <path android:fillColor="#2D2D5A"
+        android:pathData="M8,185 L504,185 L504,186 L8,186 Z"/>
+    <path android:fillColor="#2D2D5A"
+        android:pathData="M8,285 L504,285 L504,286 L8,286 Z"/>
+    <path android:fillColor="#2D2D5A"
+        android:pathData="M8,385 L504,385 L504,386 L8,386 Z"/>
+
+    <!-- Trend line -->
+    <path android:strokeColor="#818CF8" android:strokeWidth="4"
+        android:fillColor="#00000000"
+        android:pathData="M8,430 L504,115"/>
+
+    <!-- Vela 1 roja - wick -->
+    <path android:strokeColor="#EF4444" android:strokeWidth="5"
+        android:fillColor="#00000000"
+        android:pathData="M72,328 L72,345 M72,415 L72,438"/>
+    <!-- body -->
+    <path android:fillColor="#EF4444"
+        android:pathData="M54,345 L108,345 L108,415 L54,415 Z"/>
+
+    <!-- Vela 2 verde -->
+    <path android:strokeColor="#10B981" android:strokeWidth="5"
+        android:fillColor="#00000000"
+        android:pathData="M148,283 L148,298 M148,370 L148,403"/>
+    <path android:fillColor="#10B981"
+        android:pathData="M130,298 L184,298 L184,370 L130,370 Z"/>
+
+    <!-- Vela 3 roja -->
+    <path android:strokeColor="#EF4444" android:strokeWidth="5"
+        android:fillColor="#00000000"
+        android:pathData="M224,243 L224,258 M224,320 L224,353"/>
+    <path android:fillColor="#EF4444"
+        android:pathData="M206,258 L260,258 L260,320 L206,320 Z"/>
+
+    <!-- Vela 4 verde grande -->
+    <path android:strokeColor="#10B981" android:strokeWidth="5"
+        android:fillColor="#00000000"
+        android:pathData="M300,183 L300,198 M300,278 L300,313"/>
+    <path android:fillColor="#10B981"
+        android:pathData="M282,198 L336,198 L336,278 L282,278 Z"/>
+
+    <!-- Vela 5 verde -->
+    <path android:strokeColor="#10B981" android:strokeWidth="5"
+        android:fillColor="#00000000"
+        android:pathData="M376,145 L376,160 M376,232 L376,265"/>
+    <path android:fillColor="#10B981"
+        android:pathData="M358,160 L412,160 L412,232 L358,232 Z"/>
+
+    <!-- Vela 6 verde grande -->
+    <path android:strokeColor="#10B981" android:strokeWidth="5"
+        android:fillColor="#00000000"
+        android:pathData="M450,108 L450,123 M450,201 L450,235"/>
+    <path android:fillColor="#10B981"
+        android:pathData="M432,123 L486,123 L486,201 L432,201 Z"/>
+
+    <!-- Badge -->
+    <path android:fillColor="#4F46E5"
+        android:pathData="M56,418 Q56,486 70,486 L442,486 Q456,486 456,472 L456,432 Q456,418 442,418 Z"/>
+
+</vector>
