@@ -21,7 +21,7 @@ workflows:
     environment:
       java: 11
       android_signing:
-        - tradepro
+        - TRaderMindMC
     scripts:
       - name: Generate Gradle Wrapper
         script: |
